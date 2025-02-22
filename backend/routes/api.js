@@ -11,9 +11,9 @@ const router = express.Router();
 const customerController = require("../controllers/customers");
 
 router.post("/customers", apiLimit, customerController.createCustomer);
-// router.put("/customers/:id", apiLimit, customerController.updateCustomer);
-// router.delete("/customers/:id", apiLimit, customerController.deleteCustomer);
-// router.get("/customers/:id", apiLimit, customerController.getCustomer);
+router.put("/customers/:id", apiLimit, customerController.updateCustomer);
+router.delete("/customers/:id", apiLimit, customerController.deleteCustomer);
+router.get("/customers/:id", apiLimit, customerController.getCustomer);
 router.get("/customers", apiLimit, customerController.getAllCustomers);
 
 module.exports = router;
