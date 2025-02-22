@@ -1,0 +1,8 @@
+npm init
+npm nodemon
+npm i
+npx prisma init
+npx prisma db pull
+npx prisma generate
+npx prisma migrate dev --name update_customer_schema
+npx nodemon npm start
