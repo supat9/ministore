@@ -16,7 +16,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <q-tabs align="left">
           <q-route-tab to="/" label="Home" />
           <q-route-tab to="/create" label="Create" />
-          <q-route-tab to="/about" label="About" />
+          <q-route-tab to="/about" label="Product" />
+          <q-route-tab to="/createProduct" label="Create Product" />
         </q-tabs>
 
       </q-toolbar>

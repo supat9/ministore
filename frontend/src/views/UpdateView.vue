@@ -39,7 +39,7 @@ const fetchData = async () => {
 }
 fetchData()
 
-const onSubmit = () =>{
+const onSubmit = () => {
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
@@ -60,7 +60,7 @@ const onSubmit = () =>{
 
     fetch("http://localhost:8800/api/v1/customers/" + id.value, requestOptions)
         .then((response) => {
-            if(!response.ok) {
+            if (!response.ok) {
                 return response.json().then((error) => {
                     throw new Error(error.message || "Something went wrong!");
                 });
